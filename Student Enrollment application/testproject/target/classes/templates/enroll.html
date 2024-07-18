@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" th:href="@{/eroll.css}" href="../static/eroll.css">
+</head>
+<body>
+<div>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <label>THE SIYOCHEM</label>
+        </div>
+        <div class="navbar-right">
+
+
+            <a href="http://localhost:8080/api/v3/acc">
+                <img src="../static/student.jpg" th:src="@{/student.jpg}">
+                <span>KASUN ABCD</span>
+            </a>
+        </div>
+    </nav>
+
+    <div class="content">
+
+
+        <div class="side-menu">
+            <ul>
+                <br><br>
+                <li> <a href="http://localhost:8080/api/v2/ren/data"><i class="fa-solid fa-house"></i> Dash Board</a></li>
+                <li> <a href="http://localhost:8080/api/v2/get"><i class="fa-solid fa-book"></i> Courses</a></li>
+                <li> <a href="http://localhost:8080/api/v3/grade"><i class="fa-regular fa-star"></i> Grades</a></li>
+                <li> <a href="#"><i class="fa-solid fa-eject"></i> Payment</a></li>
+                <li> <a href="http://localhost:8080/api/v3/contact"><i class="fa-solid fa-phone-volume"></i> Contact</a></li>
+
+                <br><br><br><br><br><br><br>
+                <li> <a href="/logout"></i> Log Out</a></li>
+
+
+            </ul>
+        </div>
+
+        <div class="mid">
+
+            <form action="student/enroll" method="post">
+
+                <lable for="num">Enter ID:</lable>
+                <input id="num" type="text" name="id">  <br><br>
+                <lable for="nam">Enter Course Name:</lable>
+                <input id="nam" type="text" name="cname">   <br><br>
+
+                <lable for="abc">Enter Teacher Name:</lable>
+                <input id="abc" type="text" name="tname">   <br><br>
+
+                <button type="submit" onsubmit="myfunction()">Submit</button>
+
+            </form>
+
+        </div>
+
+        <img src="../static/4ba787.jpg" th:src="@{/4ba787.jpg}">
+
+
+   </div>
+
+
+  <script type="text/javascript">
+    function  myfunction(){
+        window.location.href = 'http://localhost:8080/api/v2/student/enroll';
+    }
+   </script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,208 @@
+body{
+    font-family: sans-serif;
+    background: #c5c4c4;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration:none;
+    box-sizing: border-box;
+}
+
+
+.navbar {
+    width: 100%;
+    height: 90px;
+    background-color: #112041; /* Change to your preferred background color */
+    color: #fff; /* Change to your preferred text color */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+
+
+}
+
+.navbar .navbar-left label{
+    font-size: 30px;
+    margin-left: 35px;
+    cursor: pointer;
+    font-weight: 300;
+}
+
+.navbar-right a{
+    text-decoration: none;
+}
+
+.navbar-right span {
+
+
+    font-size: 25px;
+    margin: 3px;
+
+    color: #0e0c0c;
+    font-weight: bolder;
+}
+
+
+ul a{
+    text-decoration: none;
+}
+
+.navbar-right img{
+    height: 70px;
+    width: 70px;
+    border-radius: 40px;
+}
+.content{
+
+    display: flex;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+}
+.side-menu{
+
+
+    width: 16%;
+    height: 100%;
+    background: #071952;
+
+}
+
+.side-menu ul a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 65px;
+    font-size: 20px;
+    color:white;
+    padding-left:15px ;
+    box-sizing: border-box;
+    border-top:1px solid rgb(255,255,255,.1);
+    border-bottom: 1px solid black;
+    transition: .4s;
+}
+
+.side-menu li:hover a{
+    padding-left: 40px;
+}
+.mid{
+    margin: 25px;
+    width: 34%;
+    height: 100%;
+    color: #1f1d1d;
+    font-weight: bold;
+
+}
+.mid p{
+    font-family: Times New Roman;
+    font-size: 17px;
+    text-align: justify;
+}
+
+.mid img{
+    border-radius: 10px;
+    margin-bottom: 20px;
+
+    width: 550px;
+    height: 300px;
+}
+
+.main{
+    width: 50%;
+    margin: 10px;
+}
+.main label{
+    margin-left: 75px;
+    margin-top: 30px;
+    font-size: 25px;
+    font-weight: bolder;
+    font-family: sans-serif;
+
+    padding: 5px;
+}
+
+
+.main .table {
+    margin-top: 25px;
+    margin-right: 20px;
+    justify-content: center;
+    margin-left:190px;
+}
+
+.main .table table {
+    height: auto;
+    text-align: center;
+    display: block;
+    margin: 10px;
+
+}
+
+
+.table table th, td {
+
+    padding:15px;
+    border: none; /* Remove borders from cells */
+    border-bottom: 2px solid #1f1d1d;
+    color: #1f1d1d;
+    font-size: 16px;
+    background: #b6b4b4;
+}
+
+.table table th {
+    background-color: #969696;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+.enrolls{
+    display: block;
+    text-decoration: none;
+
+    margin-top: 30px;
+    vertical-align: bottom;
+    margin-left: 225px;
+
+
+}
+
+.enrolls h1 a {
+    margin: 8px;
+    padding: 8px;
+    text-decoration: none;
+    color: #b91227;
+    border: 2px solid #be071e;
+    border-radius: 7px ;
+    font-size: 40px;
+
+}
+
+.main .enrolls h1:hover a{
+    font-weight: bolder;
+    border-width:4px;
+}
+
+.main .enrolls h1{
+    vertical-align: bottom;
+}
+
+.table table tr td button{
+    border: none;
+    color: #071952;
+    font-weight: bolder;
+    background: #b6b4b4;
+
+}
+.table table tr td button:hover{
+    padding-left: 10px;
+}
+
+
+
+
+

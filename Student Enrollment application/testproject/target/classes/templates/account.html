@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dash Board</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"  >
+
+  <link rel="stylesheet" th:href="@{/dboard.css}" href="../static/dboard.css">
+  <style>
+ 
+    .section {
+      margin-bottom: 30px;
+      padding: 20px;
+      border-radius: 10px;
+      background-color: #1e2a38; /* Darker tile color */
+      color: #fecc98; /* Text color */
+      transition: transform 0.3s ease; /* Add transition for transform property */
+    }
+    .section:hover {
+      transform: scale(1.05); /* Scale up slightly on hover */
+    }
+    .section h2 {
+      margin-bottom: 20px;
+    }
+    .section p {
+      margin-bottom: 10px;
+    }
+    .profile-picture {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin: 0 auto 20px;
+      border: 5px solid #fecc98; /* Border color */
+    }
+    .profile-picture img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    /* Add this style for the scrollable section */
+    .scrollable-section {
+      max-height: 600px; /* Set a maximum height */
+      overflow-y: auto; /* Enable vertical scrollbar if needed */
+      padding: 20px; /* Optional: Add some padding for better aesthetics */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Your existing content -->
+  <div>
+  <nav class="navbar">
+    <div class="navbar-left">
+      <label>THE SIYOCHEM</label>
+    </div>
+    <div class="navbar-right">
+      <i class="fa-solid fa-user"></i>
+	  <a href="http://localhost:8080/api/v3/acc">
+      <span class="profile-name">Kasun ABCD</span>
+      </a>
+    </div>
+  </nav>
+
+
+
+
+
+
+  <div class="content">
+
+
+    <div class="side-menu">
+      <ul>
+        <br><br>
+        <li> <a href="http://localhost:8080/api/v2/ren/data"><i class="fa-solid fa-house"></i> Dash Board</a></li>
+        <li> <a href="http://localhost:8080/api/v2/get"><i class="fa-solid fa-book"></i> Courses</a></li>
+        <li> <a href="http://localhost:8080/api/v3/grade"><i class="fa-regular fa-star"></i> Grades</a></li>
+        <li> <a href="#"><i class="fa-solid fa-eject"></i> Payment</a></li>
+        <li> <a href="http://localhost:8080/api/v3/contact"><i class="fa-solid fa-phone-volume"></i> Contact</a></li>
+
+        <br><br><br><br><br><br><br>
+        <li> <a href="/logout"></i> Log Out</a></li>
+
+
+      </ul>
+    </div>
+    
+	<div class="container">
+    <div class="scrollable-section">
+      <div class="profile-picture">
+        <img src="../static/profile.jpg" alt="Profile Picture" th:src="@{/profile.jpg}">
+      </div>
+
+       <div class="container">
+
+
+
+    <div class="row">
+      <div class="col-md-6">
+        <div class="section">
+          <h2>Student Information:</h2>
+          <p>Name: John Doe</p>
+          <p>Age: 20</p>
+          <p>Grade/Class: 10th</p>
+          <!-- Add more student information here -->
+        </div>
+
+        <div class="section">
+          <h2>Contact Information:</h2>
+          <p>Email: john.doe@example.com</p>
+          <p>Contact: 123-456-7890</p>
+          <p>Address: 1234 Elm St, Cityville, CA, 12345, USA</p>
+          <!-- Add more contact information here -->
+        </div>
+
+        <div class="section">
+          <h2>Health Information:</h2>
+          <p>Allergies: None</p>
+          <p>Medical Conditions: Asthma</p>
+          <!-- Add more health information here -->
+        </div>
+
+        <div class="section">
+          <h2>Additional Details:</h2>
+          <p>Preferred Communication: Email</p>
+          <p>Hobbies: Soccer, Music</p>
+          <!-- Add more additional details here -->
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="section">
+          <h2>Parent Information:</h2>
+          <p>Father's Name: Mark Doe</p>
+          <p>Mother's Name: Jane Doe</p>
+          <!-- Add more parent information here -->
+        </div>
+
+        <div class="section">
+          <h2>Financial Information:</h2>
+          <p>Tuition Fee: $5000 per semester</p>
+          <p>Payment History: <a href="#">[Link to payment history]</a></p>
+          <!-- Add more financial information here -->
+        </div>
+
+        <div class="section">
+          <h2>Documents and Reports:</h2>
+          <p><a href="report_card.pdf">Latest Report Card</a></p>
+          <!-- Add more document links here -->
+        </div>
+
+        <div class="section">
+          <h2>Feedback and Comments:</h2>
+          <textarea rows="5" class="form-control"></textarea>
+        </div>
+      </div>
+    </div>
+
+  </div>
+      
+    </div>
+  </div>
+      
+
+  
+
+  
+  </div>
+
+ 
+</div>
+
+  
+
+  <!-- Your existing scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script type="text/javascript">
+
+  </script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
